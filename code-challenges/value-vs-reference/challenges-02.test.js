@@ -17,7 +17,7 @@ CHALLENGE 2**
 
 Write a function that accepts an array and copies the first element to the end of the array. The change should be reflected in the source array that was passed in to the function. That is, the function should modify the array 'in place'.
 
-Do not use a return statement.
+**Do not use a return statement.**
 
 For example:
 const a = [1, 2, 3];
@@ -36,7 +36,7 @@ Write a function that accepts an object and an integer as arguments and adds a n
 
 The change should be reflected in the source object that was passed in to the function. That is, the function should modify the object 'in place'.
 
-Do not use a return statement.
+**Do not use a return statement.**
 
 For example:
 const octavia = { fullName: 'Octavia Estelle Butler' };
