@@ -1,12 +1,12 @@
 'use strict';
 
 
-/* ------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
 CHALLENGE 1
 
 Write a function that appends ' The end.' to a string, and returns the modified string. The original source string should not be modified.
 
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------ */
 
 const appendTheEnd = (str) => {
   return `${str} The end.`;
@@ -29,7 +29,7 @@ const appendFirstToLast = (arr) => {
   arr.push(arr[0]);
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
 CHALLENGE 3
 
 Write a function that accepts an object and an integer as arguments and adds a new property to the object called yearBorn. The value of the yearBorn property should be the integer that was passed in.
@@ -42,13 +42,13 @@ For example:
 const octavia = { fullName: 'Octavia Estelle Butler' };
 addBirthYearProperty(octavia, 1947);
 console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
   obj.yearBorn = year;
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
 CHALLENGE 4
 
 Write a function that accepts an array of people objects and adds a new property called isAuthor to each object in the list. Set the value of the new property to true.
@@ -59,7 +59,7 @@ For example:
 const people = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }];
 setStatusAsAuthor(people);
 console.log(people[1].isAuthor) prints true
------------------------------------------------------------------------------------------------- */
+--------------------------------------------------------------------------------------*/
 
 const setStatusAsAuthor = (people) => {
   people.forEach(i =>{
@@ -67,7 +67,7 @@ const setStatusAsAuthor = (people) => {
   })
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
 CHALLENGE 5
 
 Write a function that accepts two arrays. Append the values from the second array into the first,
@@ -89,7 +89,7 @@ const append = (arr1, arr2) => {
 
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* ---------------------------------------------------------------------------------------
 TESTS
 
 All the code below will verify that your functions are working to solve the challenges.
