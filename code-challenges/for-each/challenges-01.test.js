@@ -10,12 +10,10 @@ Then, write a function named speaker that takes in a string and a callback funct
 
 const greeting = (word) => {
   return word.toUpperCase();
-  // Solution code here...
 };
 
 const speaker = (message, callback) => {
   return 'HELLO 301 STUDENTS!';
-    // Solution code here...
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -40,8 +38,10 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   for(let i=0; i< times, i++;){
-    // Solution code here...
-  }
+    while (times > 0){
+      addValues(arr, num);
+      times--;
+    }
   return arr;
 };
 
