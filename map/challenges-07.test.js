@@ -1,7 +1,5 @@
 'use strict';
 
-import { removeTypeDuplicates } from "@babel/types";
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
