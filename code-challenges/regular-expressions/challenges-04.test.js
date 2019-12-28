@@ -1,6 +1,6 @@
 'use strict';
 
-/* ------------------------------------------------------------------------------------------------
+/* Hollie helped me with some of these because I was really confused. ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
 Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
@@ -13,8 +13,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  let regex = /[0-9]/g;
-  return regex.test(input);
+  return /\d/.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,12 +25,12 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  let regex = /[A-Z]\w+/g;
-  let match = str.match(regex);
-  if (match === null) {
-    return [];
+  let capitalMatch = [];
+  let findCaps = str.match(/[A-Z]\w*/g);
+  if (findCaps !== null){
+    findCaps.forEach(value => capitalMatch.push(value));
   }
-  return match;
+  return capitalMatch;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -41,14 +40,14 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  let aToJArr =[];
-  let regex = /(^[A-J]).+/;
-  arr.foreach(element => {
-    if (regex.test(element)) {
-      aToJArr.push(element);
+  let newArr = [];
+  let findAtoJ = /^[A-J]\w*/;
+  arr.forEach(value => {
+    if (value.match(findAtoJ)){
+      newArr.push(value);
     }
   });
-  return aToJArr;
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -64,8 +63,8 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  let regex = /\b([Oo]ct)(\b)?(ober)?(\b)/g;
-  return regex.test(input);
+  let matchInput = /\bOctober\b|\boctober\b|\bOct\b|\boct\b/
+  return matchInput.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -79,8 +78,12 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  let regex = /\w+\s/g;
-  return str.match(regex)
+  let wordsWithSpace = [];
+  let lookForSpace = str.match(/[A-Za-z0-9]\w*\s/g);
+  if (lookForSpace !== null){
+    lookForSpace.forEach(value => wordsWithSpace.push(value));
+  }
+  return wordsWithSpace;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,9 +99,7 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  let regex = /[aeiou]/gi;
-  return str.replace(regex, '_')
-
+  return str.replace(/[aeiou]/gi, '_');
 };
 
 /* ------------------------------------------------------------------------------------------------
