@@ -1,6 +1,6 @@
 'use strict';
 
-/* Hollie helped me with some of these. ------------------------------------------------------------------------------------------------
+/* Hollie helped me with some of these because I was really confused. ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
 Write a function named isNum that takes in a string or number of any length. This function should use a regular expression pattern to return true if the input contains a number, and false if the input does not contain a number.
