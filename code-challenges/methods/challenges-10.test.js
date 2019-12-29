@@ -12,7 +12,13 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+  let numRepeated = 0;
+  input.map(value => {
+    value.map(value2 => {
+      if (value2 === target) {numRepeated ++}
+    });
+  });
+  return numRepeated;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -26,7 +32,10 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  return input.reduce((accumulator, value) => {
+    value = value.reduce((accumulator, value) => accumulator + value);
+    return accumulator + value;
+  }, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -42,7 +51,16 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  return input.map(numbers => {
+    let result = numbers.filter(numbers => {
+      if (typeof (numbers) === 'number') {
+        if (numbers % 5 === 0) {
+          return true;
+        }
+      }
+    });
+    return result.map(numbers => Math.pow(2, numbers));
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -108,7 +126,17 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  const newString = data.filter(names => {
+    if (names.gender === 'male' || names.gender === 'female') {
+      return name;
+    }
+  });
+
+  return newString.reduce((characterName, segment) => {
+    if (typeof characterName === 'object') {
+      return characterName.name + ' and ' + segment.name;
+    } else return characterName + ' and ' + segment.name;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +146,9 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let starWarsData = data.reduce((accumulator, character) =>
+    accumulator.height < character.height ? character:accumulator);
+  return starWarsData.name;
 };
 
 /* ------------------------------------------------------------------------------------------------
