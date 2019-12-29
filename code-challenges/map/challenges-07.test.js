@@ -1,6 +1,7 @@
 'use strict';
 
-/* ------------------------------------------------------------------------------------------------
+/* I did this code challenge with Crystal's help
+ ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
 Write a function named forLoopTwoToThe that, given an array of integers as input, iterates over the array and returns a new array. The returned array should contain the result of raising 2 to the power of the original input element.
@@ -27,7 +28,7 @@ Write a function named forEachTwoToThe that produces the same output as your for
 const forEachTwoToThe = (arr) => {
   let result = [];
   arr.forEach(element => {
-      result.push(Math.pow(2, element));
+    result.push(Math.pow(2, element));
   })
   return result;
 };
@@ -161,10 +162,10 @@ const snorlaxStats = {
 
 const extractStats = (arr) => {
   return arr.map (snorlax => {
-      return {
-          name: snorlax.stat.name,
-          total: snorlax.effort + snorlax.baseStat,
-      }
+    return {
+      name: snorlax.stat.name,
+      total: snorlax.effort + snorlax.baseStat,
+    }
   })
 };
 
