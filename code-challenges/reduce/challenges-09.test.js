@@ -69,8 +69,8 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  return arr.reduce((accumulator, validator)=> {
-    accumulator.push(validator.name);
+  return arr.reduce((accumulator, value)=> {
+    accumulator.push(value.name);
     return accumulator;
   }, []);
 };
@@ -140,9 +140,9 @@ const characters = [
 ];
 
 const countNumberOfChildren = (arr) => {
-  return arr.reduce((accumulator, validator) => {
-    if (validator.children) {
-      accumulator += validator.children.length;
+  return arr.reduce((accumulator, value) => {
+    if (value.children) {
+      accumulator += value.children.length;
     }
     return accumulator;
   }, 0);
@@ -157,9 +157,9 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
 const calculateAverage = (arr) => {
-  let arrayAverage = arr.reduce((accumulator, validator) => {
+  let arrayAverage = arr.reduce((accumulator, value) => {
     accumulator.count = arr.length;
-    accumulator.sum += validator;
+    accumulator.sum += value;
     return accumulator;
 
   }, {count:0, sum:0});
@@ -184,8 +184,8 @@ const isPrime = (value) => {
 };
 
 const countPrimeNumbers = (arr) => {
-  return arr.reduce((accumulator, validator) => {
-    if (isPrime(validator)) accumulator++;
+  return arr.reduce((accumulator, value) => {
+    if (isPrime(value)) accumulator++;
     else {
       accumulator === 0;
     }
