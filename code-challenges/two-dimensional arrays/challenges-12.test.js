@@ -23,11 +23,21 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  let arr = [];
+  for (let i = 0; i < stores[0].length; i++) { arr.push([]) }
+  stores.forEach(store => {
+    store.forEach((amount, idx) => {
+      arr[idx].push(amount);
+    });
+  });
+  arr = arr.map(value => {
+    return value.reduce((acc, cv) => acc + cv, 0);
+  });
+  return arr;
 
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* Hollie helped me with challenges 1-8 ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
 Pat has decided that he would also like to organize his data as objects containing the number of cookies sold per hour and the time.
@@ -38,7 +48,10 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  const res = hours.map((time, idx) => {
+    return { sales: `${data[idx]} cookies`, time: time };
+  });
+  return res;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -60,7 +73,13 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  let amount = 0;
+  arr.forEach(value => {
+    value.items.forEach(items => {
+      if (items.name === 'Treats') {amount += items.quantity}
+    });
+  });
+  return amount;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +101,8 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  //  Solution code here...
+  if (board[row][col] === '#') { return 'hit' }
+  return 'miss';
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -94,7 +114,9 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
-  // Solution code here...
+  let res = 1;
+  numbers.flat().forEach(val => res *= val);
+  return res;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,7 +136,14 @@ const weeklyTemperatures = [
 ];
 
 const averageDailyTemperature = (weather) => {
-  // Solution code here...
+  let total = 0;
+  let numdays = 0;
+  weather.forEach(val => {
+    numdays += val.length
+    total += val.reduce((acc, temp) => acc + temp, 0);
+  })
+  let avg = total / numdays;
+  return parseFloat(avg.toFixed(2));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -135,7 +164,19 @@ let lowestWeeklyTemperatureData = [
 ];
 
 const lowestWeeklyAverage = (weather) => {
-  // Solution code here...
+  let total = 0;
+  let numdays = 7;
+  const arr = [];
+  weather.forEach(week => {
+    total = week.reduce((acc, temp) => acc + temp, 0);
+    let avg = total / numdays;
+    arr.push(parseFloat(avg.toFixed(2)));
+  })
+  let lowestTemp = arr[0];
+  arr.forEach(val => {
+    if (val < lowestTemp) lowestTemp = val;
+  })
+  return lowestTemp;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -151,7 +192,16 @@ For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
 ------------------------------------------------------------------------------------------------ */
 
 const excel = (str) => {
-  // Solution code here...
+  let arr = str.split('\n');
+  const res = [];
+  const totalArr = [];
+  arr.forEach(val => res.push(val.split(',')));
+  res.forEach(val => {
+    let total = 0;
+    val.forEach(val2 => total += parseInt(val2));
+    totalArr.push(total);
+  });
+  return totalArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
