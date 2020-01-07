@@ -8,4 +8,4 @@ Write a function called reverseArray which takes an array as an argument. Withou
 We used a for loop to solve this challenge. 
 
 ## Solution
-![reverse array](/assets/reverseArray.jpeg)
+![reverse array](../assets/reverseArray.jpeg)
