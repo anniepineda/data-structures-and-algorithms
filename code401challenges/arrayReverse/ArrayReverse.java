@@ -18,5 +18,5 @@ public class ArrayReverse {
       int item = inputArray[ newPosition ];
       outputArray[i] = item;
     }
-    return new int[0];    
-  }
+    return outputArray;    
+  }}
