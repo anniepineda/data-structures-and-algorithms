@@ -35,26 +35,5 @@ input array = [1,5,7,3,12]
 public static
 
 
-////
-
-CC02:
-
-public class ArrayShift {
-    public static int[] insertShiftArray(int[] startingArray, int valueToAdd) {
-        int[] newArray = new int[startingArray.length+1];
-        int midPoint = startingArray.length/2;
-        int n = 0;
-        for(int i =0; i<newArray.length; i++){
-            if(i != midPoint ){
-                newArray[i] = startingArray[n];
-                n++;
-            }else{
-                newArray[i] = valueToAdd;
-            }
-        }
-        System.out.println(Arrays.toString(newArray));
-        return newArray;
-    }
-}
 
 
