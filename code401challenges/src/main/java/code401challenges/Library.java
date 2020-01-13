@@ -10,30 +10,30 @@ public class Library {
 //    }
 
     public class ArrayShift {
-        public static int[]insertShiftArray (int[] starting )
+
     }
 
 
 }
 
 
-
-
-/////////psudo code///////
-input array = [1,5,7,3,12]
-        new value = 10
-        new array = []
-        midpoint = input array lenght/2
-
-        insert shift array (input arary, new value)
-        for [i] if i != midpoint
-        add [i] to new array
-        if i = midpoint
-        add new value to to new array then add [i]
-        return new array
-
-public static
-
+//
+//
+///////////psudo code///////
+//input array = [1,5,7,3,12]
+//        new value = 10
+//        new array = []
+//        midpoint = input array lenght/2
+//
+//        insert shift array (input arary, new value)
+//        for [i] if i != midpoint
+//        add [i] to new array
+//        if i = midpoint
+//        add new value to to new array then add [i]
+//        return new array
+//
+//public static
+//
 
 
 
