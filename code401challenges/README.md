@@ -32,3 +32,20 @@ the built-in methods available to your language, return an array with the new va
 
 ## Solution
 ![]
+
+
+
+
+Linked List (code challenge 06)
+
+- [ ] Top-level README “Table of Contents” is updated
+ - [ ] Feature tasks for this challenge are completed
+ - [ ] Unit tests written and passing
+     - [ ] “Happy Path” - Expected outcome
+     - [ ] Expected failure
+     - [ ] Edge Case (if applicable/obvious)
+ - [ ] README for this challenge is complete
+     - [ ] Summary, Description, Approach & Efficiency, Solution
+     - [ ] Link to code
+     - [ ] Picture of whiteboard
+     ![reverse array](whiteboard-pictures/linked-list.jpg)
