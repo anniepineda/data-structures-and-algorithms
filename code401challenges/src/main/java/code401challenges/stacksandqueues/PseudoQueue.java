@@ -1,25 +1,28 @@
 package code401challenges.stacksandqueues;
 
+//website used for help: https://backtobackswe.com/videos/implement-a-queue-using-stacks
+
 public class PseudoQueue {
-    private Stack pushStack;
-    private Stack popStack;
+    public Stack enqueueStack;
+    public Stack dequeueStack;
 
     public PseudoQueue(){
-        this.pushStack = new Stack ();
-        this.popStack =  new Stack ();
+        this.enqueueStack = new Stack ();
+        this.dequeueStack =  new Stack ();
     }
 
     public void enqueue(int value){
-//        pushStack.push(value);
-        //while enqueue "push" values to dequeue
-
+        while(!dequeueStack.isEmpty()){
+            enqueueStack.push(dequeueStack.pop());
+        }
+        enqueueStack.push(value);
     }
 
     public int dequeue(){
-
-
+        while (!enqueueStack.isEmpty()){
+            dequeueStack.push(enqueueStack.pop());
+        }
+        return dequeueStack.pop();
     }
-
-
 
 }
