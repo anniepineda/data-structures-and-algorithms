@@ -1,9 +1,5 @@
 package code401challenges.stacksandqueues;
 
-import com.sun.codemodel.internal.JNullType;
-import com.sun.org.apache.xpath.internal.objects.XNull;
-import com.sun.tools.corba.se.idl.StructEntry;
-
 import java.io.PushbackInputStream;
 import java.util.EmptyStackException;
 
