@@ -63,17 +63,41 @@ Linked List (code challenge 06)
 # Implementation: Stacks and Queues 
 ### (code challenge/lab 10)
 
-   - [ ] Summary: 
-   - [ ] Description:
-   - [ ] Approach:
-   - [ ] Efficiency: 
-   - [ ] Solution:
+   - [ ] Summary/Description: Create a Node class that has properties for the value stored in the Node, 
+        and a pointer to the next node.
+         Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+         This object should be aware of a default empty value assigned to top when the stack is created.
+         
+         Define a method called push which takes any value as an argument and adds a new node with that 
+         value to the top of the stack with an O(1) Time performance.
+         
+         Define a method called pop that does not take any argument, removes the node from the top of the 
+         stack, and returns the node’s value.
+        
+         Define a method called peek that does not take an argument and returns the value of the node 
+         located on top of the stack, without removing it from the stack.
+         
+         Define a method called isEmpty that does not take an argument, and returns a boolean indicating 
+         whether or not the stack is empty.
+        
+         Create a Queue class that has a front property. It creates an empty Queue when instantiated.
+         This object should be aware of a default empty value assigned to front when the queue is created.
+        
+         Define a method called enqueue which takes any value as an argument and adds a new node with that 
+         value to the back of the queue with an O(1) Time performance.
+        
+         Define a method called dequeue that does not take any argument, removes the node from the front of 
+         the queue, and returns the node’s value.
+         
+         Define a method called peek that does not take an argument and returns the value of the node 
+         located in the front of the queue, without removing it from the queue.
+       
+         Define a method called isEmpty that does not take an argument, and returns a boolean indicating 
+         whether or not the queue is empty.
+   - [ ] Efficiency: O(n)
    - [ ] Link to code:
-   - [ ] Picture of whiteboard:
-     ![linked list](whiteboard-pictures/linked-list.jpg)
-
-
-
+ 
+     
 # Implement a Queue using two Stacks 
 ### (code challenge 11)
 
@@ -139,4 +163,22 @@ Linked List (code challenge 06)
    - [ ] Solution:
    - [ ] Link to code:
  
+ 
+ 
+  # FizzBuzz 
+  ### (code challenge/lab 16 & 17)
   
+   - [ ] Summary:  Binary Tree and BST 
+   - [ ] Description:   Write a function called FizzBuzzTree which takes a tree as an argument.
+                        Without utilizing any of the built-in methods available to your language, determine whether 
+                        or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same 
+                        structure as the original, but the values modified as follows:
+                          
+                        If the value is divisible by 3, replace the value with “Fizz”
+                        If the value is divisible by 5, replace the value with “Buzz”
+                        If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+                        If the value is not divisible by 3 or 5, simply turn the number into a String.
+   - [ ] Efficiency: 
+   - [ ] Solution:
+   - [ ] Link to code:
+   - [ ] Picture of whiteboard:
