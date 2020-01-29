@@ -1,19 +1,39 @@
 package code401challenges.fizzBuzzTree;
 
-
-
-
-//Write a function called FizzBuzzTree which takes a tree as an argument.
-//Without utilizing any of the built-in methods available to your language, determine whether or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same structure as the original, but the values modified as follows:
-//If the value is divisible by 3, replace the value with “Fizz”
-//If the value is divisible by 5, replace the value with “Buzz”
-//If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
-//If the value is not divisible by 3 or 5, simply turn the number into a String.
-//Return the new tree.
-
-
 public class FizzBuzzTree {
 
+    public FizzBuzzNode root;
 
+    public FizzBuzzTree(){
 
 }
+
+private void helper(FizzBuzzNode me){
+    int num = Integer.parseInt(me.value);
+    if (num % 15 == 0){
+        me.value = "FizzBuzz";
+    } else if (num % 3 == 0) {
+        me.value = "Fizz";
+    } else if (num % 5 == 0) {
+        me.value = "Buzz";
+    }
+}
+
+public void traverseFizzBuzzTree(){
+    traverseFizzBuzzTree(this.root);
+}
+
+private void traverseFizzBuzzTree(FizzBuzzNode me){
+    if (me == null){
+        return;
+    }
+    System.out.println(me.value);
+    helper(me);
+    traverseFizzBuzzTree(me.left);
+    traverseFizzBuzzTree(me.right);
+}
+
+}
+
+
+
