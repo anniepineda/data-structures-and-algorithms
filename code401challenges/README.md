@@ -170,16 +170,36 @@ Linked List (code challenge 06)
   ### (code challenge/lab 16 & 17)
   
    - [ ] Summary:  Binary Tree and BST 
-   - [ ] Description:   Write a function called FizzBuzzTree which takes a tree as an argument.
-                        Without utilizing any of the built-in methods available to your language, determine whether 
-                        or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same 
-                        structure as the original, but the values modified as follows:
+   - [ ] Description: Write a function called FizzBuzzTree which takes a tree as an argument.
+                      Without utilizing any of the built-in methods available to your language, determine whether 
+                      or not the value of each node is divisible by 3, 5 or both. Create a new tree with the same 
+                      structure as the original, but the values modified as follows:
                           
-                        If the value is divisible by 3, replace the value with “Fizz”
-                        If the value is divisible by 5, replace the value with “Buzz”
-                        If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
-                        If the value is not divisible by 3 or 5, simply turn the number into a String.
+                      If the value is divisible by 3, replace the value with “Fizz”
+                      If the value is divisible by 5, replace the value with “Buzz”
+                      If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+                      If the value is not divisible by 3 or 5, simply turn the number into a String.
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code:
    - [ ] Picture of whiteboard:
+   ![linked list](whiteboard-pictures/fizzBuzzTree.jpg)
+   
+   
+   
+   # Breadth-First Traversal 
+   ### (code challenge 17)
+     
+   - [ ] Summary:  Binary Tree and BST 
+   - [ ] Description:Write a breadth first traversal method which takes a Binary Tree as its unique input. 
+          Without utilizing any of the built-in methods available to your language, traverse the input tree using a 
+          Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+   - [ ] Efficiency: 
+   - [ ] Solution:
+   - [ ] Link to code:
+   - [ ] Picture of whiteboard:
+      ![linked list](whiteboard-pictures/breadth-first.jpg)
+   
+   
+   
+   
