@@ -9,8 +9,8 @@ public class PseudoQueueTest {
     @Test
     public void enqueue() {
         PseudoQueue testQueue = new PseudoQueue();
-        testQueue.enqueue(1);
-        assertEquals(1, testQueue.dequeue());
+        testQueue.enqueue(3);
+        assertEquals(3, testQueue.dequeue());
     }
 
     @Test
