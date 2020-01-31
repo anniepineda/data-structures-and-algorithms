@@ -6,9 +6,9 @@ public class BinarySearchTree<E extends Comparable<E>> {
 //     the binary search tree.
 
 
-    Node<E> root;
-    Node<E> current;
-    E value;
+   public Node<E> root;
+   public Node<E> current;
+   public E value;
 
     public boolean add(E value, Node<E> current){
 

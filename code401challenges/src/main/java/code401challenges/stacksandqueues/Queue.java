@@ -3,8 +3,8 @@ package code401challenges.stacksandqueues;
 import java.util.NoSuchElementException;
 
 public class Queue {
-    private Node front;
-    private Node back;
+    public Node front;
+    public Node back;
 
     public Queue() {
         this.front = null;
