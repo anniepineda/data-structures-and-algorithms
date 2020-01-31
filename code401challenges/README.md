@@ -54,7 +54,7 @@ Linked List (code challenge 06)
      - [ ] Edge Case (if applicable/obvious)
  - [ ] README for this challenge is complete
      - [ ] Summary, Description, Approach & Efficiency, Solution
-     - [ ] Link to code
+     - [ ] Link to code **Need to add**
      - [ ] Picture of whiteboard
      ![linked list](whiteboard-pictures/linked-list.jpg)
      
@@ -95,7 +95,7 @@ Linked List (code challenge 06)
          Define a method called isEmpty that does not take an argument, and returns a boolean indicating 
          whether or not the queue is empty.
    - [ ] Efficiency: O(n)
-   - [ ] Link to code:
+   - [ ] Link to code: **Need to add**
  
      
 # Implement a Queue using two Stacks 
@@ -110,10 +110,8 @@ Linked List (code challenge 06)
      dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
      The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. 
      Instantiate these Stack objects in your PseudoQueue constructor.
-   - [ ] Approach:
    - [ ] Efficiency: O(1)
-   - [ ] Solution:
-   - [ ] Link to code: 
+   - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
      ![linked list](whiteboard-pictures/pseudo-queue.jpg)
      
@@ -131,7 +129,7 @@ Linked List (code challenge 06)
    - [ ] Approach:
    - [ ] Efficiency: O(1)
    - [ ] Solution:
-   - [ ] Link to code: 
+   - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
    
    
@@ -161,7 +159,7 @@ Linked List (code challenge 06)
                          or not the value is in the tree at least once.
    - [ ] Efficiency: 
    - [ ] Solution:
-   - [ ] Link to code:
+   - [ ] Link to code: **Need to add**
  
  
  
@@ -181,7 +179,7 @@ Linked List (code challenge 06)
                       If the value is not divisible by 3 or 5, simply turn the number into a String.
    - [ ] Efficiency: 
    - [ ] Solution:
-   - [ ] Link to code:
+   - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
    ![linked list](whiteboard-pictures/fizzBuzzTree.jpg)
    
@@ -196,7 +194,7 @@ Linked List (code challenge 06)
           Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
    - [ ] Efficiency: 
    - [ ] Solution:
-   - [ ] Link to code:
+   - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
       ![linked list](whiteboard-pictures/breadth-first.jpg)
    

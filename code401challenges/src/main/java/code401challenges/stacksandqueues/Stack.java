@@ -4,7 +4,7 @@ import java.io.PushbackInputStream;
 import java.util.EmptyStackException;
 
 public class Stack {
-    private Node top;
+    public Node top;
 
 //    Define a method called push which takes any value as an argument and adds a new node with that value to the top of
 //    the stack with an O(1) Time performance.
