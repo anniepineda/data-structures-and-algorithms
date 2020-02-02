@@ -103,17 +103,35 @@ Linked List (code challenge 06)
 
    - [ ] Summary: Created a queue with two stacks.
    - [ ] Description: Create a brand new PseudoQueue class. Do not use an existing Queue. Instead, this PseudoQueue 
-   class will implement our standard queue interface (the two methods listed below), but will internally only utilize 
-   2 Stack objects. Ensure that you create your class with the following methods:
+         class will implement our standard queue interface (the two methods listed below), but will internally only
+         utilize 2 Stack objects. Ensure that you create your class with the following methods:
                
-     enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
-     dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
-     The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. 
-     Instantiate these Stack objects in your PseudoQueue constructor.
+         enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+         dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+         The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. 
+         Instantiate these Stack objects in your PseudoQueue constructor.
    - [ ] Efficiency: O(1)
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
      ![linked list](whiteboard-pictures/pseudo-queue.jpg)
+     
+    
+    
+    
+# First-in, First out Animal Shelter 
+### (code challenge 12)
+
+   - [ ] Summary: Use enqueue and dequeue to add and return animals. 
+   - [ ] Create a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, 
+         first-out approach.
+         Implement the following methods:
+         enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
+         dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
+   - [ ] Efficiency: O(1)
+   - [ ] Link to code: **Need to add**
+   - [ ] Picture of whiteboard:
+     ![linked list](whiteboard-pictures/first-in-first-out.jpg)
+     
      
      
      
@@ -121,7 +139,8 @@ Linked List (code challenge 06)
 ### (code challenge 13)
 
    - [ ] Summary: Created a queue with two stacks.
-   - [ ] Description: Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+   - [ ] Description: Your function should take a string as its only argument, and should return a boolean representing 
+         whether or not the brackets in the string are balanced. There are 3 types of brackets:
                       
                       Round Brackets : ()
                       Square Brackets : []
@@ -140,23 +159,23 @@ Linked List (code challenge 06)
 ### (code challenge/lab 15)
 
    - [ ] Summary:  Binary Tree and BST 
-   - [ ] Description:    Create a Node class that has properties for the value stored in the node, the left child node, 
-                         and the right child node.
+   - [ ] Description: Create a Node class that has properties for the value stored in the node, the left child node, 
+                      and the right child node.
                          
-                         Create a BinaryTree class
-                         Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder 
-                         which returns an array of the values, ordered appropriately.
+                      Create a BinaryTree class
+                      Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder 
+                      which returns an array of the values, ordered appropriately.
                          
-                         Any exceptions or errors that come from your code should be semantic, capturable errors. 
-                         For example, rather than a default error thrown by your language, your code should raise/throw 
-                         a custom, semantic error that describes what went wrong in calling the methods you wrote for 
-                         this lab.
+                      Any exceptions or errors that come from your code should be semantic, capturable errors. 
+                      For example, rather than a default error thrown by your language, your code should raise/throw 
+                      a custom, semantic error that describes what went wrong in calling the methods you wrote for 
+                      this lab.
                          
-                         Create a BinarySearchTree class
-                         Define a method named add that accepts a value, and adds a new node with that value in the 
-                         correct location in the binary search tree.
-                         Define a method named contains that accepts a value, and returns a boolean indicating whether 
-                         or not the value is in the tree at least once.
+                      Create a BinarySearchTree class
+                      Define a method named add that accepts a value, and adds a new node with that value in the 
+                      correct location in the binary search tree.
+                      Define a method named contains that accepts a value, and returns a boolean indicating whether 
+                      or not the value is in the tree at least once.
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
@@ -189,9 +208,10 @@ Linked List (code challenge 06)
    ### (code challenge 17)
      
    - [ ] Summary:  Binary Tree and BST 
-   - [ ] Description:Write a breadth first traversal method which takes a Binary Tree as its unique input. 
-          Without utilizing any of the built-in methods available to your language, traverse the input tree using a 
-          Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+   - [ ] Description: Write a breadth first traversal method which takes a Binary Tree as its unique input. 
+                      Without utilizing any of the built-in methods available to your language, traverse the input tree
+                      using a Breadth-first approach, and return a list of the values in the tree in the order they were
+                      encountered.
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
