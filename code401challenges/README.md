@@ -150,6 +150,7 @@ Linked List (code challenge 06)
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
+   ![linked list](whiteboard-pictures/multi-bracket.jpeg)
    
    
    
