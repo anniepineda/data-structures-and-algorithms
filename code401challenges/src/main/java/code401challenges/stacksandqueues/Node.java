@@ -1,12 +1,12 @@
 package code401challenges.stacksandqueues;
 
-public class Node {
-    int value;
-    Node next;
+public class Node<E> {
+    public E value;
+    public Node<E> next;
 
-    public Node(int value, Node next) {
+    public Node(E value, Node next) {
         this.value = value;
-        this.next = next;
+        this.next = null;
     }
 
     public String toString() {
