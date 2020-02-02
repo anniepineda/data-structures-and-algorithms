@@ -14,21 +14,25 @@ public class MultiBracketValidation {
             if((ch == '(') || (ch == '{') || (ch == '[')){
                 current.add(ch);
             }
-            else if(ch == ')'){
-                if (current.peek()== '('){
-                    current.pop();
+
+            else if(ch == ')') {
+                if(current.isEmpty() || current.pop() != '(' ) {
+                    return false;
                 }
             }
-            else if(ch == '}'){
-                if (current.peek()== '{'){
-                    current.pop();
-                }
-        }
-            else if(ch == ']'){
-                if (current.peek()== ']'){
-                    current.pop();
+
+            else if(ch == '}') {
+                if(current.isEmpty() || current.pop() != '{' ) {
+                    return false;
                 }
             }
+
+            else if(ch == ']') {
+                if(current.isEmpty() || current.pop() != '[' ) {
+                    return false;
+                }
+            }
+
         }
         return current.isEmpty();
 
