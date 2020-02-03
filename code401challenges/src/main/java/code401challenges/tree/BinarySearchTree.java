@@ -37,7 +37,9 @@ public class BinarySearchTree<E extends Comparable<E>> {
 
     //Define a method named contains that accepts a value, and returns a boolean indicating whether or not the
     // value is in the tree at least once.
-//single node : am I the target, check left, check right
+    //single node : am I the target, check left, check right
+
+
     public boolean contains(int value){
         return contains(this.root,value);
     }
