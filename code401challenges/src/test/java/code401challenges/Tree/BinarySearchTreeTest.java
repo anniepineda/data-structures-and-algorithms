@@ -25,7 +25,6 @@ public class BinarySearchTreeTest {
     }
 
 //test recursion
-
     @Test
     public void containsTest_doesContain() {
         BinarySearchTree testTree = new BinarySearchTree();
