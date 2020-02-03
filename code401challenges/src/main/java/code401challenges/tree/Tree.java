@@ -21,13 +21,12 @@ public class Tree <E> {
     }
 
     //preOrder method
-
     public void preOrder(){
         preOrder(this.root);
     }
 
-    //recurring on itself
 
+    //recurring on itself
     public void preOrder(Node<E> node){
         //base case (always at top)
         if (node == null){
@@ -55,13 +54,13 @@ public class Tree <E> {
 
 
     //postOrder, which returns an array of the values, ordered appropriately  //push //return array list
-    public ArrayList<Integer> postOrder(){
-        ArrayList<Integer> result = new ArrayList<>();
-        return postOrder(this.root, result);
-    }
+//    public ArrayList<Integer> postOrder(){
+//        ArrayList<Integer> result = new ArrayList<>();
+//        return postOrder(this.root, result);
+//    }
 
     //rearrange like this one...//
-      private ArrayList<Integer> postOrder(Node<E> node, ArrayList<Integer> result){
+    private ArrayList<Integer> postOrder(Node<E> node, ArrayList<Integer> result){
         if(node == null) {
             return result;
         }else{
@@ -73,19 +72,21 @@ public class Tree <E> {
         return result;
     }
 
-///    Code Challenge 17 Breadth-first Traversal
+
+
+/////////    Code Challenge 17 Breadth-first Traversal    //////////
 
     //Got help from: https://algorithms.tutorialhorizon.com/breadth-first-searchtraversal-in-a-binary-tree/
 
     public ArrayList<E> breadthFirstTraversal(){
-        ArrayList<E> arrayList= new ArrayList<E>();
+        ArrayList<E> arrayList= new ArrayList<>();
         Queue<Node<E>> q = new LinkedList<>();
         if (this.root != null){
             q.add(this.root);
         }
         q.add(root);
         while (!q.isEmpty()){
-            Node<E> n = (Node<E>) q.poll();
+            Node<E> n = q.poll();
             arrayList.add(n.value);
             if (n.left != null) {
                 q.add(n.left);
@@ -98,7 +99,5 @@ public class Tree <E> {
 
         return arrayList;
     }
-
-
 
 }
