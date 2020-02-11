@@ -16,6 +16,4 @@ public class ArrayShift {
         return newValue;
     }
 
-
-
 }
