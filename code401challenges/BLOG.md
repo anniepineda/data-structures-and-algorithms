@@ -1,5 +1,7 @@
 # data-structures-and-algorithms Blogs
-## Insertion Sort  walk through 
+
+
+## Insertion Sort  Walk Through 
 #### Authors: Annie Pineda and Hollie Thomas
 ### Challenge
 Diagram a walk-through of what happens when the method Insertion Sort is applied to a given array of integers.  
@@ -30,3 +32,14 @@ The second pass wil return ```[4,8,16,15,23,42]```
 The method will run one more time and all conditions will be met and will force itself out of its loop. 
 Below is a diagram to help with visuals
 ![insertion sort](whiteboard-pictures/insertion-sort.jpg)
+
+
+
+
+## Merge Sort
+#### Author: Annie Pineda
+## Challenge 
+Review the pseudo code below, then trace the algorithm by stepping through the process with the provided sample array. 
+### Approach & Efficiency
+
+### Solution
