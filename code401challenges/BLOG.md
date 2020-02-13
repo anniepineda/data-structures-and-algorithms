@@ -43,3 +43,14 @@ Review the pseudo code below, then trace the algorithm by stepping through the p
 ### Approach & Efficiency
 
 ### Solution
+
+
+
+
+## Quick Sort
+#### Author: Annie Pineda
+## Challenge 
+Show step-by-step output after each iteration of Quick Sort. 
+### Approach & Efficiency
+
+### Solution
