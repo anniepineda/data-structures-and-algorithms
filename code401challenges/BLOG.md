@@ -6,7 +6,7 @@
 ### Challenge
 Diagram a walk-through of what happens when the method Insertion Sort is applied to a given array of integers.  
 ### Approach & Efficiency
-The given approach is not the most efficent for sorting an array with a time of (N^2) and space O(1)
+The given approach is not the most efficient for sorting an array with a time of (N^2) and space O(1)
 ### Solution
 The method passes through the array until the array is arranged in the given order. In this case we are looking at a sort method that "sorts" the numbers from largest to smallest. 
 For example the "Input Array", or starting Array, may start as [8,4,23,42,16,15]
@@ -19,7 +19,7 @@ The returned result eventually should be [4,8,15,16,23,42]. Lets take a close lo
         j <-- j - 1
       arr[j + 1] <-- temp
 ```
-Here we are using a nested for loop to compare the number on the left to the number on the right. If you do not know what a foor loop is consider [this documentation](https://www.programiz.com/java-programming/nested-loop) 
+Here we are using a nested for loop to compare the number on the left to the number on the right. If you do not know what a for loop is consider [this documentation](https://www.programiz.com/java-programming/nested-loop) 
 The first time the method passes over the array it will be sorted into
 [4,8,16,23,15,42] The left number was compared to the right by twos every time. **8** was compared to **4** and **4** being less **than** 8 became the new value for the position that **8** originally inhabitated. The same process happened until the end of the array was reached. 
 The process will be repeated until the condition is met 
@@ -54,3 +54,5 @@ Show step-by-step output after each iteration of Quick Sort.
 ### Approach & Efficiency
 
 ### Solution
+
+
