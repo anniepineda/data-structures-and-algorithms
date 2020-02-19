@@ -236,3 +236,20 @@ Linked List (code challenge 06)
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
       ![linked list](whiteboard-pictures/breadth-first.jpg)
+      
+      
+   
+   
+   
+   
+   
+   
+ ## Find the first repeated word in a book.
+ ### (code challenge 32 ) 
+    - [ ] Summary:  Find the first repeated word in a book.
+    - [ ] Description: Write a function that accepts a lengthy string parameter.
+                       Without utilizing any of the built-in library methods available to your language, return the 
+                       first word to occur more than once in that provided string.
+    - [ ] Efficiency: 
+    - [ ] Solution:
+    - [ ] Link to code: **Need to add**
