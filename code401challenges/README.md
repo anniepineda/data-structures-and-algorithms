@@ -238,18 +238,37 @@ Linked List (code challenge 06)
       ![linked list](whiteboard-pictures/breadth-first.jpg)
       
       
-   
-   
+      
+      
+## Hashtable
+### (code challenge/lab 33 ) 
+   - [ ] Summary:  Hashtable
+   - [ ] Description: Implement a Hashtable with the following methods:
+                      
+                      add: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+                      get: takes in the key and returns the value from the table.
+                      contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
+                      hash: takes in an arbitrary key and returns an index in the collection.
+   - [ ] Efficiency: 
+   - [ ] Solution:
+   - [ ] Link to code: **Need to add**
+   - [ ] Picture of whiteboard:
+      ![linked list](whiteboard-pictures/breadth-first.jpg)
+      
+      
    
    
    
    
  ## Find the first repeated word in a book.
  ### (code challenge 32 ) 
-    - [ ] Summary:  Find the first repeated word in a book.
-    - [ ] Description: Write a function that accepts a lengthy string parameter.
-                       Without utilizing any of the built-in library methods available to your language, return the 
-                       first word to occur more than once in that provided string.
-    - [ ] Efficiency: 
-    - [ ] Solution:
-    - [ ] Link to code: **Need to add**
+   - [ ] Summary:  Find the first repeated word in a book.
+   - [ ] Description: Write a function called tree_intersection that takes two binary tree parameters.
+                       Without utilizing any of the built-in library methods available to your language, return a set 
+                       of values found in both trees.
+
+   - [ ] Efficiency: 
+   - [ ] Solution:
+   - [ ] Link to code: **Need to add**
+    ![linked list](whiteboard-pictures/breadth-first.jpg)
+    
