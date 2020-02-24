@@ -55,4 +55,4 @@ Show step-by-step output after each iteration of Quick Sort.
 
 ### Solution
 
-
+![insertion sort](whiteboard-pictures/mergeSort.jpg) 
