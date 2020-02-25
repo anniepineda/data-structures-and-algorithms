@@ -13,7 +13,7 @@ the built-in methods available to your language, return an array with the new va
 
 ## Solution
 
-![reverse array](./whiteboard-pictures/array-insert.jpg)
+![reverse array](../../../../whiteboard-pictures/array-insert.jpg)
 
 
 
@@ -36,7 +36,7 @@ search key, or -1 if the element does not exist.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-![binary search](whiteboard-pictures/binary-search.jpg)
+![binary search](../../../../whiteboard-pictures/binary-search.jpg)
 
 
 
@@ -56,7 +56,7 @@ Linked List (code challenge 06)
      - [ ] Summary, Description, Approach & Efficiency, Solution
      - [ ] Link to code **Need to add**
      - [ ] Picture of whiteboard
-     ![linked list](whiteboard-pictures/linked-list.jpg)
+     ![linked list](../../../../whiteboard-pictures/linked-list.jpg)
      
      
 
@@ -113,7 +113,7 @@ Linked List (code challenge 06)
    - [ ] Efficiency: O(1)
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
-     ![linked list](whiteboard-pictures/pseudo-queue.jpg)
+     ![linked list](../../../../whiteboard-pictures/pseudo-queue.jpg)
      
     
     
@@ -130,7 +130,7 @@ Linked List (code challenge 06)
    - [ ] Efficiency: O(1)
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
-     ![linked list](whiteboard-pictures/first-in-first-out.jpg)
+     ![linked list](../../../../whiteboard-pictures/first-in-first-out.jpg)
      
      
      
@@ -150,7 +150,7 @@ Linked List (code challenge 06)
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
-   ![linked list](whiteboard-pictures/multi-bracket.jpeg)
+   ![linked list](../../../../whiteboard-pictures/multi-bracket.jpeg)
    
    
    
@@ -217,7 +217,7 @@ Linked List (code challenge 06)
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
-      ![linked list](whiteboard-pictures/breadth-first.jpg)
+      ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
    
    
    
@@ -235,7 +235,7 @@ Linked List (code challenge 06)
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
-      ![linked list](whiteboard-pictures/breadth-first.jpg)
+      ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
       
       
       
@@ -253,7 +253,7 @@ Linked List (code challenge 06)
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
-      ![linked list](whiteboard-pictures/breadth-first.jpg)
+      ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
       
       
    
@@ -270,5 +270,49 @@ Linked List (code challenge 06)
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
-    ![linked list](whiteboard-pictures/breadth-first.jpg)
+    ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
     
+    
+    
+ 
+ ## Graph
+ ### (code challenge 35/ lab35)
+  - [ ] Summary:  Implementation of graph.
+  - [ ] Description:  AddNode()
+                     Adds a new node to the graph
+                     Takes in the value of that node
+                     Returns the added node
+                    
+                     AddEdge()
+                     Adds a new edge between two nodes in the graph
+                     Include the ability to have a “weight”
+                     Takes in the two nodes to be connected by the edge
+                     Both nodes should already be in the Graph
+                     
+                     GetNodes()
+                     Returns all of the nodes in the graph as a collection (set, list, or similar)
+               
+                     GetNeighbors()
+                     Returns a collection of nodes connected to the given node
+                     Takes in a given node
+                     Include the weight of the connection in the returned collection
+                    
+                     Size()
+                     Returns the total number of nodes in the graph
+ 
+  - [ ] Efficiency: O(n)
+  - [ ] Solution: Need to add the link. 
+ 
+ 
+ 
+ ## Breadth-First Traversal Graph
+ ### (code challenge 32 ) 
+   - [ ] Summary:  Implement a breadth-first traversal on a graph.
+   - [ ] Description: Extend your graph object with a breadth-first traversal method that accepts a starting node. 
+   Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order 
+   they were visited. Display the collection.
+
+   - [ ] Efficiency: 
+   - [ ] Solution:
+   - [ ] Link to code: **Need to add**
+    ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
