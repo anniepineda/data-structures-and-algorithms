@@ -1,7 +1,6 @@
 package code401challenges.graph;
 
-import org.junit.Before;
-
+//import org.junit.Before;
 import java.util.ArrayList;
 import java.util.HashSet;
 
@@ -26,10 +25,10 @@ public class Graph {
     }
 
     public void connectEdgeToVertex(Vertex startOfEdge, Vertex endOfEdge, int weight){
-        Edge pointGoToEnd = new Edge(endOfEdge, weight);
+        Edge pointGoToEnd = new Edge(startOfEdge, weight);
         startOfEdge.edgesOfVertexOrConnections.add(pointGoToEnd);
 
-        Edge pointGoToStart = new Edge(startOfEdge, weight);
+        Edge pointGoToStart = new Edge(endOfEdge, weight);
         endOfEdge.edgesOfVertexOrConnections.add(pointGoToStart);
     }
 
@@ -53,10 +52,14 @@ public class Graph {
         return verticesThatAreNeighbors;
     }
 
-    //return array.size
+    //return vertices/nodes in the set
+    public int size(){
+        return allVertices.size();
+    }
 
     public String toString(Vertex vertex){
         return vertex.vertexNodeName;
+
     }
 
     public Boolean doesItHaveEdges(Vertex a, Vertex b){
