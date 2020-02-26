@@ -1,6 +1,5 @@
 package code401challenges.graph;
 
-import sun.security.provider.certpath.Vertex;
 
 public class Edge {
     Vertex nodesConnected;
