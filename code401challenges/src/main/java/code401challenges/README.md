@@ -332,3 +332,18 @@ Linked List (code challenge 06)
    - [ ] Link to code: **Need to add**
      ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
  
+ 
+ 
+ 
+  ## Conduct a depth first pre-order traversal on a graph
+  ### (code challenge 38)
+  - [ ] Summary: Conduct a depth first preorder traversal on a graph
+  - [ ] Description: Create a function that accepts an adjacency list as a graph, and conducts a depth first 
+  traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes 
+  in their pre-order depth-first traversal order.
+  - [ ] Efficiency: 
+  - [ ] Solution:
+  - [ ] Link to code: **Need to add**
+  ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
+
+ 
