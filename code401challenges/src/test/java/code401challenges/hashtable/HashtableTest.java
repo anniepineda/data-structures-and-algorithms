@@ -1,18 +1,41 @@
 package code401challenges.hashtable;
 
+import org.junit.Test;
+
+import javax.lang.model.SourceVersion;
+
+import static org.junit.Assert.*;
+
 public class HashtableTest {
 
+    @Test
+    public void testAdd(){
+        Hashtable h = new Hashtable();
+        h.add("Annie", "Green");
+        System.out.println(h);
+        assertTrue(h.contains("Annie"));
+    }
 
+    @Test
+    public void testContains(){
+        Hashtable h = new Hashtable();
+        h.add("Annie", "Green");
+        h.add("Jeff", "Blue");
+        boolean actual = h.contains("Jeff");
+        assertTrue(actual);
+    }
+
+    @Test
+    public void testGet(){
+        Hashtable h = new Hashtable();
+        h.add("Annie", "Green");
+        h.add("Jeff", "Blue");
+        String actual = h.get("Jeff");
+//        System.out.println("actual = " + actual);
+        String expected = "Blue";
+        assertEquals(expected, actual);
+    }
 
 
 }
 
-
-//    Write tests to prove the following functionality:
-//
-//        Adding a key/value to your hashtable results in the value being in the data structure
-//        Retrieving based on a key returns the value stored
-//        Successfully returns null for a key that does not exist in the hashtable
-//        Successfully handle a collision within the hashtable
-//        Successfully retrieve a value from a bucket within the hashtable that has a collision
-//        Successfully hash a key to an in-range value

@@ -3,62 +3,60 @@ package code401challenges.hashtable;
 //Used as a resource: http://www.newthinktank.com/2013/03/java-hash-table/
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.NoSuchElementException;
 
 public class Hashtable {
-    String[] theArray;
-    int arraySize;
-    int itemsInArray = 0;
+    LinkedList<Entry>[] theArray;
 
+    public Hashtable() {
+        theArray = new LinkedList[20];
+        for(int i = 0; i < theArray.length; i++) {
+            theArray[i] = new LinkedList<>();
+        }
+    }
 
-    public void hashFunction2(String[] stringsForArray, String[] theArray) {
+   public int hash(String str){
+        int stringTotal = 1;
+        for(int i = 0; i < str.length(); i++){
+            stringTotal = stringTotal * str.charAt(i);
+        }
+        stringTotal %= theArray.length;
+        return Math.abs(stringTotal);
+   }
 
-        for (int n = 0; n < stringsForArray.length; n++) {
-            String newElementVal = stringsForArray[n];
-            // Create an index to store the value in by taking the modulus
-            int arrayIndex = Integer.parseInt(newElementVal) % 29;
-            System.out.println("Modulus Index= " + arrayIndex + " for value "
-                    + newElementVal);
-            // iterate through the array until we find an empty space
-            while (theArray[arrayIndex] != "-1") {
-                ++arrayIndex;
-                System.out.println("Collision Try " + arrayIndex + " Instead");
-                // At end of array go back to index 0
-                arrayIndex %= arraySize;
-            }
-            theArray[arrayIndex] = newElementVal;
+   public void add(String key, String value){
+        Entry entry = new Entry(key, value);
+        int index = hash(key);
+        theArray[index].add(entry);
+   }
+
+   public String get(String key){
+        int index = hash(key);
+        if (theArray[index].size()== 1){
+
+            return theArray[index].get(0).value;
         }
 
-    }
-
-    // Returns the value stored in Hashtable
-
-    public String findKey(String key) {
-        // Find the keys original hash key
-        int arrayIndexHash = Integer.parseInt(key) % 29;
-
-        while (theArray[arrayIndexHash] != "-1") {
-
-            if (theArray[arrayIndexHash] == key) {
-                // Found the key so return it
-                System.out.println(key + " was found in index "
-                        + arrayIndexHash);
-                return theArray[arrayIndexHash];
+        for (Entry entry : theArray[index]){
+            if (entry.key.equals(key)){
+                return entry.value;
             }
-
-            // Look in the next index
-            ++arrayIndexHash;
-            // If we get to the end of the array go back to index 0
-            arrayIndexHash %= arraySize;
         }
-        // If key cannot be found return null
-        return null;
-    }
 
-    Hashtable(int size) {
-        arraySize = size;
-        theArray = new String[size];
-        Arrays.fill(theArray, "-1");
-    }
+        throw new NoSuchElementException();
+   }
+
+   public boolean contains(String key){
+       int index = hash(key);
+
+       for (Entry entry : theArray[index]){
+           if (entry.key.equals(key)){
+               return true;
+           }
+       }
+       return false;
+   }
 
 
 }
