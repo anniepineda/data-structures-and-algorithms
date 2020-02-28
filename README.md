@@ -1,6 +1,6 @@
 # data-structures-and-algorithms
 
-# Reverse an Array
+## Reverse an Array
 <!-- Short summary or background information -->
 
 ## Challenge
