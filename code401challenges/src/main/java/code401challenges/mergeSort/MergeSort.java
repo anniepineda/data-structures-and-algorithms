@@ -26,7 +26,7 @@ public class MergeSort {
         return array;
     }
 
-    /// Helper Method
+    //Helper Method
     private static void merge(int[] left, int[] right, int[] arr){
         int i = 0;
         int j = 0;
@@ -43,6 +43,8 @@ public class MergeSort {
                 j++;
             }
         }
+
+
         if(i == left.length){
             // add value to right
             while(k < arr.length){
