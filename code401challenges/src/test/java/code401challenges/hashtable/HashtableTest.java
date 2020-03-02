@@ -12,7 +12,6 @@ public class HashtableTest {
     public void testAdd(){
         Hashtable h = new Hashtable();
         h.add("Annie", "Green");
-        System.out.println(h);
         assertTrue(h.contains("Annie"));
     }
 

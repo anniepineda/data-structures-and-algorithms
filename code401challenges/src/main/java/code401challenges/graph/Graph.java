@@ -3,6 +3,7 @@ package code401challenges.graph;
 //import org.junit.Before;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 
 //Resources: https://www.geeksforgeeks.org/implementing-generic-graph-in-java/
 //https://www.youtube.com/watch?v=gXgEDyodOJU
@@ -24,12 +25,13 @@ public class Graph {
         return v;
     }
 
-    public void connectEdgeToVertex(Vertex startOfEdge, Vertex endOfEdge, int weight){
-        Edge pointGoToEnd = new Edge(startOfEdge, weight);
+    public Edge connectEdgeToVertex(Vertex startOfEdge, Vertex endOfEdge, int weight){
+        Edge pointGoToStart = new Edge(startOfEdge, weight);
+        Edge pointGoToEnd = new Edge(endOfEdge, weight);
         startOfEdge.edgesOfVertexOrConnections.add(pointGoToEnd);
-
-        Edge pointGoToStart = new Edge(endOfEdge, weight);
         endOfEdge.edgesOfVertexOrConnections.add(pointGoToStart);
+
+        return pointGoToEnd;
     }
 
     public ArrayList getVerticesNodes(){
@@ -40,16 +42,8 @@ public class Graph {
         return vertex;
     }
 
-    public ArrayList getVertexNeighbors(Vertex allVertexNeighbors){
-        ArrayList verticesThatAreNeighbors = new ArrayList();
-
-        for(Edge edge: allVertexNeighbors.edgesOfVertexOrConnections){
-            if(allVertexNeighbors.edgesOfVertexOrConnections.contains(edge)){
-                verticesThatAreNeighbors.add(edge.nodesConnected.vertexNodeName);
-                verticesThatAreNeighbors.add(edge.weight);
-            }
-        }
-        return verticesThatAreNeighbors;
+    public List getVertexNeighbors(Vertex allVertexNeighbors){
+        return allVertexNeighbors.edgesOfVertexOrConnections;
     }
 
     //return vertices/nodes in the set
