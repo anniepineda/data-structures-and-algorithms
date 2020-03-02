@@ -18,8 +18,6 @@ the built-in methods available to your language, return an array with the new va
 
 
 
-
-
 Binary Search (code challenge 03)
 
 # Binary search in a sorted 1D array
@@ -46,7 +44,6 @@ search key, or -1 if the element does not exist.
 
 Linked List (code challenge 06)
 
-- [ ] Top-level README “Table of Contents” is updated
  - [ ] Feature tasks for this challenge are completed
  - [ ] Unit tests written and passing
      - [ ] “Happy Path” - Expected outcome
@@ -218,24 +215,30 @@ Linked List (code challenge 06)
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
       ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
-   
-   
-   
+      
+      
+      
+      
+        
+        
    
 ## Hashtable
 ### (code challenge/lab 30 ) 
    - [ ] Summary:  Hashtable
    - [ ] Description: Implement a Hashtable with the following methods:
                       
-                      add: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
-                      get: takes in the key and returns the value from the table.
-                      contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
-                      hash: takes in an arbitrary key and returns an index in the collection.
+          add: takes in both the key and value. This method should hash the key, and add the key and value pair to the 
+          table, handling collisions as needed.
+          get: takes in the key and returns the value from the table.
+          contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
+          hash: takes in an arbitrary key and returns an index in the collection.
+          
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
    - [ ] Picture of whiteboard:
       ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
+      
       
       
       
@@ -245,10 +248,11 @@ Linked List (code challenge 06)
    - [ ] Summary:  Hashtable
    - [ ] Description: Implement a Hashtable with the following methods:
                       
-                      add: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
-                      get: takes in the key and returns the value from the table.
-                      contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
-                      hash: takes in an arbitrary key and returns an index in the collection.
+         add: takes in both the key and value. This method should hash the key, and add the key and value pair to the 
+         table, handling collisions as needed.
+         get: takes in the key and returns the value from the table.
+         contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
+         hash: takes in an arbitrary key and returns an index in the collection.
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
@@ -259,18 +263,18 @@ Linked List (code challenge 06)
    
    
    
-   
  ## Find the first repeated word in a book.
  ### (code challenge 32 ) 
    - [ ] Summary:  Find the first repeated word in a book.
    - [ ] Description: Write a function called tree_intersection that takes two binary tree parameters.
-                       Without utilizing any of the built-in library methods available to your language, return a set 
-                       of values found in both trees.
+          Without utilizing any of the built-in library methods available to your language, return a set 
+          of values found in both trees.
 
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
     ![linked list](../../../../whiteboard-pictures/breadth-first.jpg)
+    
     
     
     
@@ -309,8 +313,8 @@ Linked List (code challenge 06)
  ### (code challenge 36 ) 
    - [ ] Summary:  Implement a breadth-first traversal on a graph.
    - [ ] Description: Extend your graph object with a breadth-first traversal method that accepts a starting node. 
-   Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order 
-   they were visited. Display the collection.
+       Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order 
+       they were visited. Display the collection.
 
    - [ ] Efficiency: 
    - [ ] Solution:
@@ -323,10 +327,10 @@ Linked List (code challenge 06)
  ## Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct flights? If so, how much will the total trip cost be?
  ### (code challenge 37)
    - [ ] Summary:  Given a business trip itinerary, and an Alaska Airlines route map, is the trip possible with direct 
-   flights? If so, how much will the total trip cost be?
+        flights? If so, how much will the total trip cost be?
    - [ ] Description: Write a function based on the specifications above, which takes in a graph, and an array of city 
-   names. Without utilizing any of the built-in methods available to your language, return whether the full trip is 
-   possible with direct flights, and how much it would cost.
+           names. Without utilizing any of the built-in methods available to your language, return whether the full trip is 
+           possible with direct flights, and how much it would cost.
    - [ ] Efficiency: 
    - [ ] Solution:
    - [ ] Link to code: **Need to add**
