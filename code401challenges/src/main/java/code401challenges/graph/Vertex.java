@@ -3,13 +3,13 @@ package code401challenges.graph;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Vertex {
-    String vertexNodeName;
-    List<Edge>edgesOfVertexOrConnections;
-
-    public Vertex(String vertexNodeName){
-        this.vertexNodeName = vertexNodeName;
-        this.edgesOfVertexOrConnections = new ArrayList<>();
+public class Vertex<E>{
+    public E value;
+    Vertex(E val) {
+        this.value = val;
     }
-
+    @Override
+    public String toString(){
+        return value.toString();
+    }
 }

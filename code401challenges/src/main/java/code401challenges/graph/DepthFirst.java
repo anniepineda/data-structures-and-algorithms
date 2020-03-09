@@ -4,12 +4,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 
 
-//Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of
-// the built-in methods available to your language, return a collection of nodes in the order they were visited.
-// Display the collection.
 
-
-public class BreadthFirst {
+public class DepthFirst {
     class Graph {
         private int V;
         private LinkedList<Integer> adj[];
@@ -24,20 +20,20 @@ public class BreadthFirst {
             adj[v].add(w);
         }
 
-        void BFS(int s) {
+        void DFS(int s) {
             boolean visited[] = new boolean[V];
-            LinkedList<Integer> queue = new LinkedList<Integer>();
+            LinkedList<Integer> stack = new LinkedList<Integer>();
             visited[s] = true;
-            queue.add(s);
-            while (queue.size() != 0) {
-                s = queue.poll();
+            stack.add(s);
+            while (stack.size() != 0) {
+                s = stack.pop();
                 System.out.print(s + " ");
                 Iterator<Integer> i = adj[s].listIterator();
                 while (i.hasNext()) {
                     int n = i.next();
                     if (!visited[n]) {
                         visited[n] = true;
-                        queue.add(n);
+                        stack.push(n);
                     }
                 }
             }
